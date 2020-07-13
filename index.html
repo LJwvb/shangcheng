@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+	<title>笨鸟先飞</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="js/layui/css/layui.css" />
+	<link rel="stylesheet" href="css/index.css" type="text/css" />
+	<link rel="stylesheet"
+		href="http://cdn.repository.webfont.com/webfonts/nomal/136262/45803/5e64fa27f629d80aa4383792.css"
+		type="text/css" />
+
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header start-->
+		<header class="head header_active" id="header">
+			<div class="header_inner" id="header_inner">
+				<div class="header_mian">
+					<div class="header_left">
+						<a href="index.html" class="logo">
+							<figure>
+								<img src="img/logo/logo-2(2).png" alt="Logo" style="width: 110px; height: 110px;">
+							</figure>
+						</a>
+					</div>
+					<div class="header_center">
+						<div>
+							<ul class="layui-nav" lay-filter="">
+								<li class="menu_li layui-nav-item  layui-this">
+									<a href="index.html" class="menu_a">主页</a>
+								</li>
+								<li class="menu_li layui-nav-item"><a href="#" class="menu_a">商品</a>
+									<dl class="layui-nav-child">
+										<!-- 二级菜单 -->
+										<ul class="sub_menu">
+											<li>
+												<a class="menu_title" href="#">小米</a>
+												<ul>
+													<li>
+														<a href="#">小米数字系列</a>
+													</li>
+													<li>
+														<a href="#">小米Mix系列</a>
+													</li>
+													<li>
+														<a href="#">Redmi系列</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="menu_title" href="#">华为</a>
+												<ul>
+													<li>
+														<a href="#">华为mate系列</a>
+													</li>
+													<li>
+														<a href="#">华为P系列</a>
+													</li>
+													<li>
+														<a href="#">华为荣耀系列</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="menu_title" href="#">oppo</a>
+												<ul>
+													<li>
+														<a href="#">oppo find系列</a>
+													</li>
+													<li>
+														<a href="#">oppo Reno系列</a>
+													</li>
+													<li>
+														<a href="#">oppo A系列</a>
+													</li>
+													<li>
+														<a href="#">oppo K系列</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="menu_title" href="#">iphone</a>
+												<ul>
+													<li>
+														<a href="#">iphone数字系列</a>
+													</li>
+
+												</ul>
+											</li>
+										</ul>
+									</dl>
+								<li class="menu_li layui-nav-item"><a href="#" class="menu_a">论坛</a></li>
+								<li class="menu_li layui-nav-item"><a href="#" class="menu_a">联系我们</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header_right">
+						<div class="header_right-box">
+							<div class="header_search">
+								<div class="header_search-box">
+									<i class="layui-icon layui-icon-search" style="font-size: 35px;"></i>
+									<input type="text" placeholder="Press enter to search">
+								</div>
+							</div>
+							<div class="header_me" style="float:left;">
+								<a href=""><img src="img/logo/me.png" class="layui-nav-img"><span
+										class="layui-badge-dot"
+										style="margin-left: -16px;margin-bottom: 11px;"></span></a>
+								<span>个人中心</span>
+								<div class="header_sub" style="left:0;">
+									<a href="#">登录</a>
+									<a href="#">注册</a>
+									<a href="#">帮助</a>
+								</div>
+							</div>
+							<div class="header_phone" style="float:right;">
+								<img src="img/logo/phone.png" style="width: 31px; height: 31px;">
+								<span>:88888888888</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+		<!-- main start -->
+		<main class="main">
+			<div class="main_inner">
+				<!-- 轮播图 -->
+				<div class="main_lunbo">
+					<div class="layui-carousel" id="test1">
+						<div carousel-item>
+							<div><img src="img/main/lunbo_3.png">
+							</div>
+							<div><img src="img/main/lunbo_4.png">
+							</div>
+							<div><img src="img/main/lunbo_2.png">
+							</div>
+							<div><img src="img/main/lunbo_1.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 最新产品 -->
+				<div class="title_1">
+					<span class="css1f5f9a738321446">最新<span style="font-size: 35px; color: red;">旗舰</span>产品</span>
+				</div>
+				<!-- VS -->
+				<div class="main_product">
+					<img src="img/main/main_1.jpg">
+					<div class="main_newpro">
+						<div class="new">
+							<div class="newone ">
+								<span class="title_newone layui-anim layui-anim-upbit layui-anim-loop">OPPO Find X2
+									Pro</span>
+								<img src="img/main/product_1.png" onclick="particular_one()">
+							</div>
+							<div class="vs">
+								vs
+							</div>
+							<div class="newtwo">
+								<span class="title_newtwo layui-anim layui-anim-upbit layui-anim-loop">小米10 Pro</span>
+								<img src="img/main/product_2.png" onclick="particular_two()">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 5G -->
+				<div class="title_2">
+					<img src="img/main/main_2.jpg">
+				</div>
+				<!-- 5G手机 -->
+				<div class="main_5G">
+					<div class="main_5G-box">
+						<div class="main_5G-title">
+							<h2 class="main_5G-title-H2">5G </h2>
+							<h5 class="main_5G-title-H5">product</h5>
+							<p>2020 is the first year of 5g mobile communication era in China</p>
+						</div>
+						<div class="main_5G-product">
+							<div class="main_5G-product-cot imgpro">
+								<div class="main_5G-product-cot-img ">
+									<img src="img/main/pro_1.png" />
+									<div class="product_action actpro">
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-star" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-heart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-cart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-about" style="font-size: 30px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="img_inner">
+									<div class="img_inner-tltle">
+										<a href="#">HUAWEI Mate 30 Pro </a>
+									</div>
+									<div class="img_inner-price">
+										<h3 class="img_inner-price-H3">￥5899.00 <span
+												style="text-decoration:line-through; color: silver;">¥6399.00</span>
+										</h3>
+									</div>
+									<div class="img_inner-star">
+										<div></div>
+										<!-- <i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i> -->
+									</div>
+								</div>
+							</div>
+							<div class="main_5G-product-cot imgpro">
+								<div class="main_5G-product-cot-img ">
+									<img src="img/main/pro_2.png" />
+									<div class="product_action actpro">
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-star" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-heart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-cart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-about" style="font-size: 30px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="img_inner">
+									<div class="img_inner-tltle">
+										<a href="#">腾讯黑鲨3 Pro </a>
+									</div>
+									<div class="img_inner-price">
+										<h3 class="img_inner-price-H3">￥4699.00 <span
+												style="text-decoration:line-through; color: silver;">¥暂无</span>
+										</h3>
+									</div>
+									<div class="img_inner-star">
+										<!-- <i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i> -->
+										<div></div>
+									</div>
+								</div>
+							</div>
+							<div class="main_5G-product-cot imgpro">
+								<div class="main_5G-product-cot-img ">
+									<img src="img/main/pro_3.png" />
+									<div class="product_action actpro">
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-star" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-heart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-cart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-about" style="font-size: 30px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="img_inner">
+									<div class="img_inner-tltle">
+										<a href="#">OPPO Find X2 Pro </a>
+									</div>
+									<div class="img_inner-price">
+										<h3 class="img_inner-price-H3">￥6999.00 <span
+												style="text-decoration:line-through; color: silver;">¥暂无</span>
+										</h3>
+									</div>
+									<div class="img_inner-star">
+										<div></div>
+										<!-- <i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i> -->
+									</div>
+								</div>
+							</div>
+							<div class="main_5G-product-cot imgpro">
+								<div class="main_5G-product-cot-img ">
+									<img src="img/main/pro_4.png" />
+									<div class="product_action actpro">
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-star" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-heart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-cart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-about" style="font-size: 30px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="img_inner">
+									<div class="img_inner-tltle">
+										<a href="#">三星S20 Ultra </a>
+									</div>
+									<div class="img_inner-price">
+										<h3 class="img_inner-price-H3">￥9999.00 <span
+												style="text-decoration:line-through; color: silver;">¥暂无</span>
+										</h3>
+									</div>
+									<div class="img_inner-star">
+										<div></div>
+										<!-- <i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i> -->
+									</div>
+								</div>
+							</div>
+							<div class="main_5G-product-cot imgpro">
+								<div class="main_5G-product-cot-img  ">
+									<img src="img/main/pro_1.png" />
+									<div class="product_action actpro">
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-star" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-heart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-cart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-about" style="font-size: 30px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="img_inner">
+									<div class="img_inner-tltle">
+										<a href="#">HUAWEI Mate 30 Pro </a>
+									</div>
+									<div class="img_inner-price">
+										<h3 class="img_inner-price-H3">￥5899.00 <span
+												style="text-decoration:line-through; color: silver;">¥6399.00</span>
+										</h3>
+									</div>
+									<div class="img_inner-star">
+										<div></div>
+										<!-- <i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i> -->
+									</div>
+								</div>
+							</div>
+							<div class="main_5G-product-cot imgpro">
+								<div class="main_5G-product-cot-img ">
+									<img src="img/main/pro_1.png" />
+									<div class="product_action actpro">
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-star" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-heart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-cart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-about" style="font-size: 30px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="img_inner">
+									<div class="img_inner-tltle">
+										<a href="#">HUAWEI Mate 30 Pro </a>
+									</div>
+									<div class="img_inner-price">
+										<h3 class="img_inner-price-H3">￥5899.00 <span
+												style="text-decoration:line-through; color: silver;">¥6399.00</span>
+										</h3>
+									</div>
+									<div class="img_inner-star">
+										<div></div>
+										<!-- <i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i> -->
+									</div>
+								</div>
+							</div>
+							<div class="main_5G-product-cot imgpro">
+								<div class="main_5G-product-cot-img ">
+									<img src="img/main/pro_1.png" />
+									<div class="product_action actpro">
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-star" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-heart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-cart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-about" style="font-size: 30px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="img_inner">
+									<div class="img_inner-tltle">
+										<a href="#">HUAWEI Mate 30 Pro </a>
+									</div>
+									<div class="img_inner-price">
+										<h3 class="img_inner-price-H3">￥5899.00 <span
+												style="text-decoration:line-through; color: silver;">¥6399.00</span>
+										</h3>
+									</div>
+									<div class="img_inner-star">
+										<div></div>
+										<!-- <i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i> -->
+									</div>
+								</div>
+							</div>
+							<div class="main_5G-product-cot imgpro">
+								<div class="main_5G-product-cot-img  ">
+									<img src="img/main/pro_1.png" />
+									<div class="product_action actpro">
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-star" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-heart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-cart" style="font-size: 30px;"></i>
+											</a>
+										</div>
+										<div class="product_action-icon">
+											<a href="#" class="action-btn">
+												<i class="layui-icon layui-icon-about" style="font-size: 30px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="img_inner">
+									<div class="img_inner-tltle">
+										<a href="#">HUAWEI Mate 30 Pro </a>
+									</div>
+									<div class="img_inner-price">
+										<h3 class="img_inner-price-H3">￥5899.00 <span
+												style="text-decoration:line-through; color: silver;">¥6399.00</span>
+										</h3>
+									</div>
+									<div class="img_inner-star">
+										<div></div>
+										<!-- <i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i>
+										<i class="layui-icon layui-icon-rate-solid"></i> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 新品上市 -->
+				<div class="title_3">
+					<img src="img/main/main_3.jpg">
+				</div>
+				<!-- 时间线 -->
+				<div class="main_time">
+					<div class="main_time-box">
+						<div class="container">
+							<ul class="time-horizontal">
+								<li>
+									<b></b>
+									<div class="time_img ">
+										<img src="img/main/time_1.png">
+									</div>
+									<span style="font-weight: bold;">VIVO Nex 3s</span><br><br>2020/3/10
+								</li>
+								<li>
+									<b></b>
+									<div class="time_img">
+										<img src="img/main/time_2.png">
+									</div>
+									<span style="font-weight: bold;">HUAWEI P40 系列</span><br><br>2020/3/26
+								</li>
+								<li>
+									<b></b>
+									<div class="time_img">
+										<img src="img/main/time_3.png">
+									</div>
+									<span style="font-weight: bold;">iPhone 9/iPhone SE2</span><br><br>三月底
+								</li>
+								<li>
+									<b></b>
+									<div class="time_img">
+										<img src="img/main/time_4.png">
+									</div>
+									<span style="font-weight: bold;">一加8 系列</span><br><br>4月
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</main>
+		<!-- main end -->
+		<!-- footer start -->
+		<footer class="footer">
+			<div class="footer_inner">
+				<div class="inner_content">
+					<img src="img/main/main_4.jpg">
+					<div class="content_box">
+						<div class="content_box-list">
+							<div class="list0">
+								<figure class="footer_logo">
+									<img src="img/logo/logo.png">
+								</figure>
+								<div style="line-height: 25px;  font-size: 19px;">
+									<p>浙江工业职业技术学院</p>
+									<br>
+									<p>设计与艺术学院</p>
+									<br>
+									<p>18高计1 芦吉</p>
+									<br>
+									<p>2020/3/11</p>
+								</div>
+							</div>
+							<div class="list0">
+								<h1 class="">Question</h1>
+								<ul class="footer-menu">
+									<li>
+										<a href="#">
+											<i class="layui-icon layui-icon-right"></i>
+											<span>Help</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="layui-icon layui-icon-right"></i>
+											<span>Track Order</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="layui-icon layui-icon-right"></i>
+											<span>Support</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="layui-icon layui-icon-right"></i>
+											<span>Shopping &amp; Delivery</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="layui-icon layui-icon-right"></i>
+											<span>FAQs</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="list0">
+								<h1 class="">My Account</h1>
+								<ul class="footer-menu">
+									<li>
+										<a href="#">
+											<i class="layui-icon layui-icon-right"></i>
+											<span>My Account</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="layui-icon layui-icon-right"></i>
+											<span>Order Delivery</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="layui-icon layui-icon-right"></i>
+											<span>Wishlist</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="layui-icon layui-icon-right"></i>
+											<span>Newsletter</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+	</div>
+	<script src="js/layui/layui.js"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<!-- layui script -->
+	<script>
+		layui.use('util', function () {
+			var util = layui.util;
+
+			//执行
+			util.fixbar({
+
+
+			});
+		});
+		layui.use('carousel', function () {
+			var carousel = layui.carousel;
+			//建造实例
+			carousel.render({
+				elem: '#test1',
+				width: '100%' //设置容器宽度
+				,
+				arrow: 'always' //始终显示箭头
+				,
+				height: '550px'
+
+
+				//,anim: 'updown' //切换动画方式
+			});
+		});
+		//注意：导航 依赖 element 模块，否则无法进行功能性操作
+		layui.use('element', function () {
+			var element = layui.element;
+
+			//…
+		});
+
+		function particular_one() {
+			layui.use('layer', function () {
+				var layer = layui.layer;
+				layer.open({
+					type: 1 //Page层类型
+					,
+					area: ['550px', '400px'],
+					title: 'OPPO Find X2 Pro 部分参数',
+					shade: 0.6 //遮罩透明度
+					,
+					shadeClose: true //点击遮罩关闭
+					,
+					content: '<li style="width: 260px;height: 50px;background: #f9fbff;border: 1px solid #e0eafa;margin-left:1px;margin-bottom: 10px;padding: 10px 6px 20px 0px;float: left;position: relative;"><div style="width: 55px;height: 59px;float: left;margin-right: 24px;"><img src="http://statict.cnmo-img.com.cn/origin/mainpage/product/images/pro_cell_fuselage.png"></div><p style="color: #5fa7ff;margin-bottom: 10px;line-height: 1;">机身尺寸</p><p>机身尺寸:165.2*74.4*8.8 mm</p><p>重量:207g</p></li>   <li style="width: 260px;height: 50px;background: #f9fbff;border: 1px solid #e0eafa;margin-left:12px;margin-bottom: 10px;padding: 10px 6px 20px 0px;float: left;position: relative;"><div style="width: 55px;height: 59px;float: left;margin-right: 24px;"><img src="http://statict.cnmo-img.com.cn/origin/mainpage/product/images/pro_cell_screen.png"></div><p style="color: #5fa7ff;margin-bottom: 10px;line-height: 1;">屏幕尺寸</p><p>屏幕尺寸:6.7 英寸</p><p>屏幕分辨率:3168x1440 像素</p></li>   <li style="width: 355px;height: 66px;background: #f9fbff;border: 1px solid #e0eafa;margin-left:80px;margin-bottom: 10px;padding: 10px 6px 20px 0px;float: left;position: relative;"><div style="width: 55px;height: 59px;float: left;margin-right: 24px;"><img src="http://statict.cnmo-img.com.cn/origin/mainpage/product/images/pro_cell_camera.png"></div><p style="color: #5fa7ff;margin-bottom: 10px;line-height: 1;">相机配置</p><p>后置相机:4800+4800+1300 万像素</p><p>光学变焦:10倍混合光学变焦，60倍数码变焦</p><p style="margin-left: 79px;">闪光灯:后置双LED闪光灯</p></li>   <li style="width: 355px;height: 82px;background: #f9fbff;border: 1px solid #e0eafa;margin-left:80px;margin-bottom: 10px;padding: 10px 6px 20px 0px;float: left;position: relative;"><div style="width: 55px;height: 59px;float: left;margin-right: 24px;"><img src="http://statict.cnmo-img.com.cn/origin/mainpage/product/images/pro_cell_cpu.png"></div><p style="color: #5fa7ff;margin-bottom: 10px;line-height: 1;">操作系统</p><p>操作系统:Android 10 </p><p>内存类型:LPDDR5</p><p style="margin-left: 79px;">处理器:高通骁龙865</p><p style="margin-left: 79px;">闪存类型:UFS 3.0</p></li>'
+
+				});
+			});
+		}
+
+		function particular_two() {
+			layui.use('layer', function () {
+				var layer = layui.layer;
+				layer.open({
+					type: 1 //Page层类型
+					,
+					area: ['550px', '400px'],
+					title: '小米10 Pro 部分参数',
+					shade: 0.6 //遮罩透明度
+					,
+					shadeClose: true //点击遮罩关闭
+					,
+					content: '<li style="width: 260px;height: 50px;background: #f9fbff;border: 1px solid #e0eafa;margin-left:1px;margin-bottom: 10px;padding: 10px 6px 20px 0px;float: left;position: relative;" ><div style="width: 55px;height: 59px;float: left;margin-right: 12px;"><img src="http://statict.cnmo-img.com.cn/origin/mainpage/product/images/pro_cell_fuselage.png"></div><p style="color: #5fa7ff;margin-bottom: 10px;line-height: 1;">机身尺寸</p><p>机身尺寸:162.6×74.8×8.96mm</p><p>重量:208g</p></li><li style="width: 260px;height: 50px;background: #f9fbff;border: 1px solid #e0eafa;margin-left:12px;margin-bottom: 10px;padding: 10px 6px 20px 0px;float: left;position: relative;"><div style="width: 55px;height: 59px;float: left;margin-right: 24px;"><img src="http://statict.cnmo-img.com.cn/origin/mainpage/product/images/pro_cell_screen.png"></div><p style="color: #5fa7ff;margin-bottom: 10px;line-height: 1;">屏幕尺寸</p><p>屏幕尺寸:6.67 英寸</p><p>屏幕分辨率:2340×1080 像素</p></li><li style="width: 355px;height: 66px;background: #f9fbff;border: 1px solid #e0eafa;margin-left:80px;margin-bottom: 10px;padding: 10px 6px 20px 0px;float: left;position: relative;"><div style="width: 55px;height: 59px;float: left;margin-right: 24px;"><img src="http://statict.cnmo-img.com.cn/origin/mainpage/product/images/pro_cell_camera.png"></div><p style="color: #5fa7ff;margin-bottom: 10px;line-height: 1;">相机配置</p><p>后置相机:1亿+2000+1200+800万像素</p><p>变焦:10倍混合光学变焦，50倍数字变焦</p><p style="margin-left: 79px;">闪光灯:后置LED闪光灯</p></li><li style="width: 355px;height: 82px;background: #f9fbff;border: 1px solid #e0eafa;margin-left:80px;margin-bottom: 10px;padding: 10px 6px 20px 0px;float: left;position: relative;"><div style="width: 55px;height: 59px;float: left;margin-right: 24px;"><img src="http://statict.cnmo-img.com.cn/origin/mainpage/product/images/pro_cell_cpu.png"></div><p style="color: #5fa7ff;margin-bottom: 10px;line-height: 1;">操作系统</p><p>操作系统:Android 10 </p><p>内存类型:LPDDR5</p><p style="margin-left: 79px;">处理器:高通骁龙865</p><p style="margin-left: 79px;">闪存类型:UFS 3.0</p></li>'
+				});
+			});
+		}
+	</script>
+	<!-- 鼠标事件 -->
+	<script>
+		$(function () {
+			// 导航变浅 script 
+			$(window).scroll(function () {
+				if ($(window).scrollTop() >= 0.5) {
+					$("#header").addClass("header_ac");
+				} else {
+					var current = $("#header");
+					current.removeClass("header_ac");
+					current = $(this);
+				}
+			});
+
+
+
+			//鼠标进入product
+
+			$(".imgpro").hover(function () {
+				$(this).find(".actpro").addClass("change");
+				$(this).find(".img_inner-star").children().attr("id", "star");
+				layui.use('rate', function () {
+					var rate = layui.rate;
+					//渲染
+					var ins1 = rate.render({
+						elem: '#star' //绑定元素
+						,
+						choose: function (value) {
+							if (value) alert('你打了' + value + "星")
+						}
+					});
+				});
+
+
+				$(".change").animate({
+					top: '8%',
+					width: '37px',
+					height: '230px',
+					left: '0px',
+					opacity: '1'
+				}, 300)
+			})
+			//鼠标移出product
+			$(".imgpro").mouseleave(function () {
+				$(this).find(".layui-inline").empty();
+				$(this).find(".img_inner-star").children().removeAttr("id", "star");
+				$(".change").animate({
+					top: '8%',
+					width: '37px',
+					height: '230px',
+					left: '-40px',
+					opacity: '0'
+				}, 300).removeClass("change")
+			})
+
+
+
+
+
+
+
+		});
+	</script>
+	<!-- 禁止 script -->
+	<script>
+		var noLookCode = {
+			all: function () {
+				this.menu();
+				this.keydown();
+			},
+			menu: function () {//禁止右键
+				document.oncontextmenu = function () {
+					alert('请尊重作者的劳动成果！');
+					return false;
+				};
+			},
+			keydown: function () {//禁止F12
+				document.onkeydown = function () {
+					if (window.event && window.event.keyCode == 123) {
+						event.keyCode = 0;
+						event.returnValue = false;
+						alert('请尊重作者的劳动成果！');
+						return false;
+					}
+				};
+			}
+		}
+		noLookCode.all();
+
+
+	</script>
+
+
+
+</body>
+
+</html>
